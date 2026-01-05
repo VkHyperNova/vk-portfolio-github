@@ -1,6 +1,7 @@
 "use client"; // Required because we use state (for mobile menu or theme toggle)
 import Link from "next/link";
 import { useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,6 +20,7 @@ export default function Navbar() {
         <Link href="/" className="text-2xl font-bold text-blue-600">
           MyPortfolio
         </Link>
+        <ThemeToggle />
 
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-6">

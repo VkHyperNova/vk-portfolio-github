@@ -11,14 +11,11 @@ export default function Footer() {
 
         {/* Social links */}
         <div className="flex space-x-4 mt-2 md:mt-0">
-          <Link href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <Link href="https://github.com/VkHyperNova" target="_blank" rel="noopener noreferrer">
             GitHub
           </Link>
-          <Link href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+          <Link href="https://www.linkedin.com/in/veikko-kiis-221978193/?trk=public-profile-join-page" target="_blank" rel="noopener noreferrer">
             LinkedIn
-          </Link>
-          <Link href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
-            Twitter
           </Link>
         </div>
       </div>
