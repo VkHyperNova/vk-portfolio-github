@@ -16,7 +16,9 @@ export default function HomePage() {
             Hi, I’m <span className="text-blue-600">Veikko Kiis</span>.
           </h1>
 
-          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8"><b className="text-blue-100">Junior software developer</b></p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+            <b className="text-black dark:text-blue-100">Junior software developer</b>
+          </p>
 
           <div className="flex flex-wrap gap-4">
             <Link
