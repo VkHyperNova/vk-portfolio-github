@@ -17,8 +17,8 @@ export default function Navbar() {
     <nav className="bg-white dark:bg-gray-900 shadow-md fixed w-full z-50">
       <div className="container mx-auto flex justify-between items-center px-4 py-3">
         {/* Logo / Brand */}
-        <Link href="/" className="text-2xl font-bold text-blue-600">
-          MyPortfolio
+        <Link href="/" className="text-2xl font-bold">
+          VK-DEV
         </Link>
         <ThemeToggle />
 
