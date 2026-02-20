@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "Home | Developer Portfolio",
@@ -11,29 +12,46 @@ export default function HomePage() {
     <main className="container mx-auto px-4 py-24 max-w-6xl">
       <div className="space-y-24">
         {/* ================= HERO ================= */}
-        <section className="max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Hi, I’m <span className="text-blue-600">Veikko Kiis</span>.
-          </h1>
+        <section className="grid md:grid-cols-2 gap-12 items-center">
+          {/* LEFT: TEXT */}
+          <div>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              Hi, I’m <span className="text-blue-600">Veikko Kiis</span>.
+            </h1>
 
-          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
-            <b className="text-black dark:text-blue-100">Junior software developer</b>
-          </p>
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+              <b className="text-black dark:text-blue-100">
+                Junior software developer
+              </b>
+            </p>
 
-          <div className="flex flex-wrap gap-4">
-            <Link
-              href="/projects"
-              className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
-            >
-              View Projects
-            </Link>
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="/projects"
+                className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
+              >
+                View Projects
+              </Link>
 
-            <Link
-              href="/about"
-              className="px-6 py-3 border border-blue-600 text-blue-600 rounded-md hover:bg-blue-600 hover:text-white transition"
-            >
-              About Me
-            </Link>
+              <Link
+                href="/about"
+                className="px-6 py-3 border border-blue-600 text-blue-600 rounded-md hover:bg-blue-600 hover:text-white transition"
+              >
+                About Me
+              </Link>
+            </div>
+          </div>
+
+          {/* RIGHT: IMAGE */}
+          <div className="flex justify-center md:justify-end">
+            <Image
+              src="/images/vkdev-bg-image.png"
+              alt="Veikko Kiis"
+              width={380}
+              height={380}
+              priority
+              className="rounded-2xl shadow-lg object-cover"
+            />
           </div>
         </section>
 

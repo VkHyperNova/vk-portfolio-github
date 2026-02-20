@@ -4,8 +4,8 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata = {
-  title: "Your Name | Portfolio",
-  description: "Frontend Developer Portfolio",
+  title: "Veikko Kiis | Portfolio",
+  description: "Software Developer Portfolio",
 };
 
 export default function RootLayout({ children }) {
