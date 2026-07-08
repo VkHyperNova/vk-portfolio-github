@@ -16,7 +16,7 @@ export default function ProjectsPage() {
         </h1>
         <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl">
           A selection of projects I’ve built to learn, experiment, and improve
-          my understanding of frontend and backend development.
+          my understanding of programming.
         </p>
       </header>
 
