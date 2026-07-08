@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300 mt-10 py-6">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         {/* Copyright / Branding */}
-        <p className="text-sm">&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+        <p className="text-sm">&copy; {new Date().getFullYear()} Veikko Kiis. All rights reserved.</p>
 
         {/* Social links */}
         <div className="flex space-x-4 mt-2 md:mt-0">

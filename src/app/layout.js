@@ -1,7 +1,7 @@
 // src/app/layout.js
 import "./globals.css"; // Tailwind / global styles
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export const metadata = {
   title: "Veikko Kiis | Portfolio",

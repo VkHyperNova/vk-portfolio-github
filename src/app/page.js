@@ -54,6 +54,8 @@ export default function HomePage() {
               "REST APIs",
               "WordPress",
               "SQL",
+              "Python",
+              "Linux",
             ].map((skill) => (
               <li
                 key={skill}
@@ -71,10 +73,9 @@ export default function HomePage() {
 
           <div className="grid gap-8 md:grid-cols-2">
             <div className="rounded-lg border border-gray-200 dark:border-gray-700 p-6">
-              <h3 className="text-xl font-semibold mb-2">Go CLI Utility</h3>
+              <h3 className="text-xl font-semibold mb-2">PWM</h3>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                A small command-line tool built to automate personal workflows
-                and practice clean Go code.
+                A minimal CLI password manager built in Go.
               </p>
               <p className="text-sm text-gray-500 mb-4">
                 Tech: Go, CLI, File I/O
@@ -89,14 +90,13 @@ export default function HomePage() {
 
             <div className="rounded-lg border border-gray-200 dark:border-gray-700 p-6">
               <h3 className="text-xl font-semibold mb-2">
-                Developer Portfolio
+                VK-BOOKS
               </h3>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                A multi-page portfolio built with Next.js, focused on clean
-                structure, reusable components, and readable code.
+                A CLI tool for tracking your personal reading history.
               </p>
               <p className="text-sm text-gray-500 mb-4">
-                Tech: Next.js, React, Tailwind CSS
+                Tech: Go, CLI, File I/O
               </p>
               <Link
                 href="/projects"
