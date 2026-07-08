@@ -27,6 +27,7 @@ export const projects = [
       "VK-BOOKS is a command-line utility for logging and managing books you've read. Built in Go, it emphasizes straightforward data persistence, clean error handling, and a no-frills interface that stays out of your way.",
     tech: ["Go", "CLI", "File I/O"],
     github: "https://github.com/VkHyperNova/VK-Books",
+    screenshot: "test",
     live: "",
   },
   {
@@ -37,6 +38,7 @@ export const projects = [
       "VK-QUOTES is a command-line utility for saving quotes you come across while reading — whether from books or online. Built in Go, it keeps your collection organized and accessible straight from the terminal, with a focus on simplicity and reliable data persistence.",
     tech: ["Go", "CLI", "File I/O"],
     github: "https://github.com/VkHyperNova/VK-Quotes",
+    screenshot: "test",
     live: "",
   },
   {
@@ -47,6 +49,7 @@ export const projects = [
       "VK-FINANCE is a command-line application built in Go for quickly logging and organizing personal financial data. It stores entries locally in a simple JSON-based file, with no external database or network dependency required. Designed to be fast, minimal, and fully offline, it's ideal for anyone who wants a no-frills way to track income and expenses directly from the terminal.",
     tech: ["Go", "CLI", "File I/O"],
     github: "https://github.com/VkHyperNova/VK-FINANCE",
+    screenshot: "test",
     live: "",
   },
   {
@@ -57,6 +60,7 @@ export const projects = [
       "VK-WALKING is a command-line application built in Go for quickly logging and tracking personal walking data. Entries are stored locally in a simple file-based format, with no external database or network connection required, making it a fast and fully offline way to keep a personal walking log directly from the terminal.",
     tech: ["Go", "CLI", "File I/O"],
     github: "https://github.com/VkHyperNova/vk-walking",
+    screenshot: "test",
     live: "",
   },
   {
@@ -67,6 +71,7 @@ export const projects = [
       "PWM is a lightweight command-line tool for securely storing and retrieving credentials, built entirely in Go. The project was as much a learning exercise as a utility — a hands-on deep dive into core Go fundamentals like clean error handling, structured file I/O, and writing maintainable code without unnecessary abstraction or complexity.",
     tech: ["Go", "CLI", "File I/O"],
     github: "https://github.com/VkHyperNova/PWM",
+    screenshot: "test",
     live: "",
   },
   {
@@ -77,6 +82,7 @@ export const projects = [
       "VK-FASTING is a command-line application built in Go for logging and tracking fasting periods. It stores entries locally in a simple file-based format, with no external database or network connection required, making it a fast and fully offline way to keep track of fasting duration directly from the terminal.",
     tech: ["Go", "CLI", "File I/O"],
     github: "https://github.com/VkHyperNova/vk-fasting",
+    screenshot: "test",
     live: "",
   },
   {
@@ -87,6 +93,7 @@ export const projects = [
       "vk-youtube-downloader is a command-line application built in Go for downloading YouTube videos and extracting them as audio files. It offers a simple, no-frills way to grab music or audio content directly from the terminal, without needing a browser or third-party GUI app.",
     tech: ["Go", "CLI", "File I/O"],
     github: "https://github.com/VkHyperNova/vk-youtube-downloader",
+    screenshot: "test",
     live: "",
   },
   {
@@ -97,6 +104,7 @@ export const projects = [
       "vk-time is a command-line productivity tool built in Go that helps you stay focused on a task. It runs a countdown timer while playing music, keeps the computer awake by preventing it from going to sleep, and sounds an alarm when time is up. I use it for meditation sessions, but it works just as well as a general focus or Pomodoro-style timer.",
     tech: ["Go", "CLI", "File I/O"],
     github: "https://github.com/VkHyperNova/vk-time",
+    screenshot: "test",
     live: "",
   },
   {
@@ -107,6 +115,7 @@ export const projects = [
       "vk-weather is a command-line application built in Go that fetches and displays current weather information directly in the terminal. It pulls live data from an online weather source, giving a quick, no-browser-needed way to check conditions on the go.",
     tech: ["Go", "CLI", "File I/O"],
     github: "https://github.com/VkHyperNova/VK-Weather",
+    screenshot: "test",
     live: "",
   },
   {

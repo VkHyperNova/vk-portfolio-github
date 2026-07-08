@@ -75,6 +75,16 @@ export default function ProjectsPage() {
                   Live Demo
                 </Link>
               )}
+
+              {project.screenshot && (
+                <Link
+                  href={project.screenshot}
+                  target="_blank"
+                  className="text-blue-600 hover:underline"
+                >
+                  Screenshot
+                </Link>
+              )}
             </div>
           </article>
         ))}
