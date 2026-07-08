@@ -1,6 +1,6 @@
 export const projects = [
   {
-    slug: "website",
+    slug: "ikomix-ee",
     title: "ikomix.ee",
     description: "A custom WordPress website built for a commercial laundry service in Estonia.",
     longDescription:
@@ -10,7 +10,7 @@ export const projects = [
     live: "https://www.ikomix.ee",
   },
   {
-    slug: "website",
+    slug: "ylkusaunake-ee",
     title: "ylkusaunake.ee",
     description: "A WordPress website built for a wood-heated sauna in Ülenurme.",
     longDescription:
@@ -20,7 +20,7 @@ export const projects = [
     live: "https://www.ylkusaunake.ee",
   },
   {
-    slug: "go-cli-tool",
+    slug: "vk-books",
     title: "VK-BOOKS",
     description: "A CLI tool for tracking your personal reading history.",
     longDescription:
@@ -31,7 +31,7 @@ export const projects = [
     live: "",
   },
   {
-    slug: "go-cli-tool",
+    slug: "vk-quotes",
     title: "VK-QUOTES",
     description: "A CLI tool for capturing and organizing quotes from books and the web.",
     longDescription:
@@ -42,7 +42,7 @@ export const projects = [
     live: "",
   },
   {
-    slug: "go-cli-tool",
+    slug: "vk-finance",
     title: "VK-FINANCE",
     description: "A CLI tool for tracking and organizing personal finances.",
     longDescription:
@@ -53,7 +53,7 @@ export const projects = [
     live: "",
   },
   {
-    slug: "go-cli-tool",
+    slug: "vk-walking",
     title: "VK-WALKING",
     description: "A CLI tool for logging and tracking daily walking distance.",
     longDescription:
@@ -64,7 +64,7 @@ export const projects = [
     live: "",
   },
   {
-    slug: "go-cli-tool",
+    slug: "pwm",
     title: "PWM",
     description: "A minimal CLI password manager built in Go.",
     longDescription:
@@ -75,7 +75,7 @@ export const projects = [
     live: "",
   },
   {
-    slug: "go-cli-tool",
+    slug: "vk-fasting",
     title: "VK-FASTING",
     description: "A CLI tool for tracking intermittent fasting windows.",
     longDescription:
@@ -86,7 +86,7 @@ export const projects = [
     live: "",
   },
   {
-    slug: "go-cli-tool",
+    slug: "vk-youtube-downloader",
     title: "vk-youtube-downloader",
     description: "A CLI tool for downloading audio from YouTube videos.",
     longDescription:
@@ -97,7 +97,7 @@ export const projects = [
     live: "",
   },
   {
-    slug: "go-cli-tool",
+    slug: "vk-time",
     title: "vk-time",
     description: "A CLI countdown timer with music, built for focus sessions and meditation.",
     longDescription:
@@ -108,7 +108,7 @@ export const projects = [
     live: "",
   },
   {
-    slug: "go-cli-tool",
+    slug: "vk-weather",
     title: "vk-weather",
     description: "A CLI tool for checking current weather from the terminal.",
     longDescription:
@@ -119,7 +119,7 @@ export const projects = [
     live: "",
   },
   {
-    slug: "browser-extension",
+    slug: "vks-ads-banners-remover",
     title: "VKS Annoying Ads and Banners Remover",
     description: "A lightweight Opera browser extension that automatically detects and removes intrusive ads, pop-ups, and banners for a cleaner, faster browsing experience.",
     longDescription:
@@ -129,7 +129,7 @@ export const projects = [
     live: "",
   },
   {
-    slug: "browser-extension",
+    slug: "youtube-skip-button-autoclicker",
     title: "YouTube Skip Button Autoclicker for Opera",
     description: "An Opera browser extension that automatically clicks the 'Skip Ad' button on YouTube as soon as it appears.",
     longDescription:
@@ -139,7 +139,7 @@ export const projects = [
     live: "",
   },
   {
-    slug: "browser-extension",
+    slug: "delfi-banner-remover",
     title: "Delfi.ee Banner Remover for Opera",
     description: "An Opera browser extension that blocks intrusive banners on delfi.ee.",
     longDescription:
@@ -149,13 +149,13 @@ export const projects = [
     live: "",
   },
   {
-  slug: "AutoHotkey script",
-  title: "AHK Auto-Fold Script for HWMonitor",
-  description: "An AutoHotkey script that automatically expands specific sections in HWMonitor on launch.",
-  longDescription:
-    "A simple AutoHotkey script I wrote to automate a repetitive task in HWMonitor. Instead of manually clicking to expand certain sections every time the program opens, this script does it automatically, saving a few clicks each launch.\n\nNote: this project hasn't been updated, so I'm not sure if it still works with the current version of HWMonitor. Use at your own risk.",
-  tech: ["AutoHotkey"],
-  github: "https://github.com/VkHyperNova/VK-AutoFold-HWMonitor",
-  live: "",
-},
+    slug: "ahk-autofold-hwmonitor",
+    title: "AHK Auto-Fold Script for HWMonitor",
+    description: "An AutoHotkey script that automatically expands specific sections in HWMonitor on launch.",
+    longDescription:
+      "A simple AutoHotkey script I wrote to automate a repetitive task in HWMonitor. Instead of manually clicking to expand certain sections every time the program opens, this script does it automatically, saving a few clicks each launch.\n\nNote: this project hasn't been updated, so I'm not sure if it still works with the current version of HWMonitor. Use at your own risk.",
+    tech: ["AutoHotkey"],
+    github: "https://github.com/VkHyperNova/VK-AutoFold-HWMonitor",
+    live: "",
+  },
 ];

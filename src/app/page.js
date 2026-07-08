@@ -21,7 +21,7 @@ export default function HomePage() {
 
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
               <b className="text-black dark:text-blue-100">
-                Junior software developer
+                Junior software developer & Linux user
               </b>
             </p>
 
@@ -40,18 +40,6 @@ export default function HomePage() {
                 About Me
               </Link>
             </div>
-          </div>
-
-          {/* RIGHT: IMAGE */}
-          <div className="flex justify-center md:justify-end">
-            <Image
-              src="/images/vkdev-bg-image.png"
-              alt="Veikko Kiis"
-              width={380}
-              height={380}
-              priority
-              className="rounded-2xl shadow-lg object-cover"
-            />
           </div>
         </section>
 

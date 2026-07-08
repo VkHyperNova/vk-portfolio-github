@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { projects } from "@/data/projects";
+import { projects } from "./projects";
 
 export const metadata = {
   title: "Projects",
