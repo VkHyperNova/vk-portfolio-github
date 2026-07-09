@@ -1,6 +1,7 @@
 "use client"; // Only needed if you use state (optional)
 
 import Link from "next/link";
+import { contacts } from "./contact/contacts";
 
 export default function Footer() {
   return (
@@ -11,12 +12,16 @@ export default function Footer() {
 
         {/* Social links */}
         <div className="flex space-x-4 mt-2 md:mt-0">
-          <Link href="https://github.com/VkHyperNova" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </Link>
-          <Link href="https://www.linkedin.com/in/veikko-kiis-221978193/?trk=public-profile-join-page" target="_blank" rel="noopener noreferrer">
-            LinkedIn
-          </Link>
+          {contacts.map((contact) => (
+            <Link
+              key={contact.name}
+              href={contact.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {contact.name}
+            </Link>
+          ))}
         </div>
       </div>
     </footer>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { contacts } from "./contacts"; // adjust path as needed
 
 export const metadata = {
   title: "Contact | Developer Portfolio",
@@ -12,9 +13,7 @@ export default function ContactPage() {
       <div className="space-y-20">
         {/* ================= HEADER ================= */}
         <section className="max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Contact
-          </h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact</h1>
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
             If you’d like to discuss a project, opportunity, or just have a
             technical question, feel free to reach out. I’m open to internships,
@@ -24,58 +23,30 @@ export default function ContactPage() {
 
         {/* ================= CONTACT OPTIONS ================= */}
         <section>
-          <h2 className="text-2xl font-semibold mb-8">
-            Ways to reach me
-          </h2>
+          <h2 className="text-2xl font-semibold mb-8">Ways to reach me</h2>
 
           <div className="grid gap-6 sm:grid-cols-2 max-w-3xl">
-            {/* Email */}
-            <div className="rounded-lg border border-gray-200 dark:border-gray-700 p-6">
-              <h3 className="text-lg font-semibold mb-2">Email</h3>
-              <p className="text-gray-700 dark:text-gray-300 mb-4">
-                Best for professional inquiries and detailed discussions.
-              </p>
-              <a
-                href="mailto:your.email@example.com"
-                className="text-blue-600 hover:underline"
+            {contacts.map((contact) => (
+              <div
+                key={contact.name}
+                className="rounded-lg border border-gray-200 dark:border-gray-700 p-6"
               >
-                your.email@example.com
-              </a>
-            </div>
+                <h3 className="text-lg font-semibold mb-2">{contact.name}</h3>
+                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                  {contact.description}
+                </p>
+                <Link
+                  href={contact.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  {contact.label}
+                </Link>
+              </div>
+            ))}
 
-            {/* GitHub */}
-            <div className="rounded-lg border border-gray-200 dark:border-gray-700 p-6">
-              <h3 className="text-lg font-semibold mb-2">GitHub</h3>
-              <p className="text-gray-700 dark:text-gray-300 mb-4">
-                View my code, projects, and development style.
-              </p>
-              <Link
-                href="https://github.com/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                github.com/yourusername
-              </Link>
-            </div>
-
-            {/* LinkedIn */}
-            <div className="rounded-lg border border-gray-200 dark:border-gray-700 p-6">
-              <h3 className="text-lg font-semibold mb-2">LinkedIn</h3>
-              <p className="text-gray-700 dark:text-gray-300 mb-4">
-                Professional profile and work history.
-              </p>
-              <Link
-                href="https://linkedin.com/in/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                linkedin.com/in/yourusername
-              </Link>
-            </div>
-
-            {/* Location / Availability */}
+            {/* Location / Availability — kept separate since it's not a link */}
             <div className="rounded-lg border border-gray-200 dark:border-gray-700 p-6">
               <h3 className="text-lg font-semibold mb-2">Availability</h3>
               <p className="text-gray-700 dark:text-gray-300">

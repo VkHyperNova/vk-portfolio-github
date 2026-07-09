@@ -1,5 +1,6 @@
 // src/app/about/page.js
 import Link from "next/link";
+import { skills } from "./skills";
 
 export const metadata = {
   title: "About Me",
@@ -79,21 +80,7 @@ export default function AboutPage() {
         <section>
           <h2 className="text-2xl font-semibold mb-6">Technical Skills</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-            {[
-              "Go (Golang)",
-              "JavaScript (ES6+)",
-              "React",
-              "Next.js",
-              "Node.js",
-              "HTML & CSS",
-              "Tailwind CSS",
-              "WordPress",
-              "REST APIs",
-              "Git & GitHub",
-              "Basic SQL",
-              "Bootstrap CSS",
-              "Python",
-            ].map((skill) => (
+            {skills.map((skill) => (
               <div
                 key={skill}
                 className="rounded-md border border-gray-200 dark:border-gray-700 px-3 py-2 text-sm text-gray-700 dark:text-gray-300"

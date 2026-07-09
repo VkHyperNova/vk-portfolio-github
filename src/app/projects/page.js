@@ -54,6 +54,23 @@ export default function ProjectsPage() {
               ))}
             </div>
 
+            {/* OS support */}
+            {project.os && (
+              <div className="flex flex-wrap gap-2 mb-6">
+                {Object.entries(project.os).map(([platform, status]) => (
+                  <span
+                    key={platform}
+                    className={`text-xs px-2 py-1 rounded ${status === "tested"
+                        ? "bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300"
+                        : "bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400"
+                      }`}
+                  >
+                    {platform.charAt(0).toUpperCase() + platform.slice(1)}: {status}
+                  </span>
+                ))}
+              </div>
+            )}
+
             {/* Links */}
             <div className="flex gap-4">
               {project.github && (

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import { skills } from "./about/skills"
 
 export const metadata = {
   title: "Home | Developer Portfolio",
@@ -21,7 +21,7 @@ export default function HomePage() {
 
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
               <b className="text-black dark:text-blue-100">
-                Junior software developer & Linux user
+                Programmer & Linux user
               </b>
             </p>
 
@@ -48,15 +48,7 @@ export default function HomePage() {
           <h2 className="text-2xl font-semibold mb-6">What I work with</h2>
 
           <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-4xl">
-            {[
-              "Go (Golang)",
-              "Next.js",
-              "REST APIs",
-              "WordPress",
-              "SQL",
-              "Python",
-              "Linux",
-            ].map((skill) => (
+            {skills.map((skill) => (
               <li
                 key={skill}
                 className="rounded-md border border-gray-200 dark:border-gray-700 px-4 py-2 text-sm text-gray-700 dark:text-gray-300"
