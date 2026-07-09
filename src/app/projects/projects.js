@@ -5,7 +5,7 @@ export const projects = [
     description: "A custom WordPress website built for a commercial laundry service in Estonia.",
     longDescription:
       "ikomix.ee is a business website built for OÜ Ikomix, a laundry and cleaning service based in Valgjärve, South Estonia, serving hotels, spas, and hospitality businesses in the region. This was my first client website — built on WordPress with a fully custom theme, covering company info, services, pricing, and contact details.",
-    tech: ["WordPress"],
+    tech: ["WordPress", "Bootstrap"],
     github: "https://github.com/VkHyperNova/ikomix",
     live: "https://www.ikomix.ee",
   },
@@ -15,7 +15,7 @@ export const projects = [
     description: "A WordPress website built for a wood-heated sauna in Ülenurme.",
     longDescription:
       "ylkusaunake.ee was my second client website — built for a local wood-heated sauna in Ülenurme that accommodates up to 10 people. Built on WordPress with a custom theme, covering info, availability, and booking details. The site is currently offline as the owner has not renewed hosting.",
-    tech: ["WordPress"],
+    tech: ["WordPress", "Bootstrap"],
     github: "https://github.com/VkHyperNova/ylkusaunake",
     live: "https://www.ylkusaunake.ee",
   },
