@@ -17,7 +17,7 @@ export const projects = [
       "ylkusaunake.ee was my second client website — built for a local wood-heated sauna in Ülenurme that accommodates up to 10 people. Built on WordPress with a custom theme, covering info, availability, and booking details. The site is currently offline as the owner has not renewed hosting.",
     tech: ["WordPress", "Bootstrap"],
     github: "https://github.com/VkHyperNova/ylkusaunake",
-    live: "https://www.ylkusaunake.ee",
+    live: "",
   },
   {
     slug: "vk-books",
@@ -160,6 +160,22 @@ export const projects = [
       macos: "unknown",
     },
     github: "https://github.com/VkHyperNova/vk-youtube-downloader",
+    screenshot: "test",
+    live: "",
+  },
+  {
+    slug: "vk-training",
+    title: "VK Training",
+    description: "A CLI tool for tracking workout progress and training history.",
+    longDescription:
+      "VK Training is a lightweight command-line tool for logging workouts, tracking progress over time, and reviewing training history — all stored locally with no external dependencies. Built for personal use.",
+    tech: ["Go", "CLI", "File I/O"],
+    os: {
+      linux: "tested",
+      windows: "unknown",
+      macos: "unknown",
+    },
+    github: "https://github.com/VkHyperNova/vk-training",
     screenshot: "test",
     live: "",
   },
