@@ -65,15 +65,15 @@ export default function HomePage() {
 
           <div className="grid gap-8 md:grid-cols-2">
             <div className="rounded-lg border border-gray-200 dark:border-gray-700 p-6">
-              <h3 className="text-xl font-semibold mb-2">PWM</h3>
+              <h3 className="text-xl font-semibold mb-2">vk-youtube-downloader</h3>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                A minimal CLI password manager built in Go.
+                Downloads YouTube videos directly from terminal and extracts clean MP3 audio.
               </p>
               <p className="text-sm text-gray-500 mb-4">
-                Tech: Go, CLI, File I/O
+                Tech: Go, CLI, ffmpeg
               </p>
               <Link
-                href="/projects"
+                href="/projects#vk-youtube-downloader"
                 className="text-blue-600 hover:underline"
               >
                 View project →
@@ -91,7 +91,7 @@ export default function HomePage() {
                 Tech: Go, CLI, File I/O
               </p>
               <Link
-                href="/projects"
+                href="/projects#vk-books"
                 className="text-blue-600 hover:underline"
               >
                 View project →

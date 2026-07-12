@@ -153,7 +153,7 @@ export const projects = [
     description: "A CLI tool for downloading audio from YouTube videos.",
     longDescription:
       "vk-youtube-downloader is a command-line application built in Go for downloading YouTube videos and extracting them as audio files. It offers a simple, no-frills way to grab music or audio content directly from the terminal, without needing a browser or third-party GUI app.",
-    tech: ["Go", "CLI", "File I/O"],
+    tech: ["Go", "CLI", "Mp3"],
     os: {
       linux: "tested",
       windows: "unknown",

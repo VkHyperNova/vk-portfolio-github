@@ -31,7 +31,8 @@ export default async function ProjectsPage() {
         {projectsWithDates.map((project) => (
           <article
             key={project.slug}
-            className="border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:shadow-md transition"
+            id={project.slug}
+            className="border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:shadow-md transition scroll-mt-24"
           >
             <div className="flex items-start justify-between gap-4 mb-2">
               <h2 className="text-2xl font-semibold">{project.title}</h2>
