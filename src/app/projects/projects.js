@@ -52,7 +52,7 @@ export const projects = [
       macos: "unknown",
     },
     github: "https://github.com/VkHyperNova/VK-Quotes",
-    screenshot: "test",
+    screenshot: "/screenshots/test.png",
     live: "",
   },
   {
@@ -69,7 +69,7 @@ export const projects = [
       macos: "unknown",
     },
     github: "https://github.com/VkHyperNova/VK-FINANCE",
-    screenshot: "test",
+    screenshot: "/screenshots/test.png",
     live: "",
   },
   {
@@ -86,7 +86,7 @@ export const projects = [
       macos: "unknown",
     },
     github: "https://github.com/VkHyperNova/vk-walking",
-    screenshot: "test",
+    screenshot: "/screenshots/test.png",
     live: "",
   },
   {
@@ -103,7 +103,7 @@ export const projects = [
       macos: "unknown",
     },
     github: "https://github.com/VkHyperNova/PWM",
-    screenshot: "test",
+    screenshot: "/screenshots/test.png",
     live: "",
   },
   {
@@ -120,7 +120,7 @@ export const projects = [
       macos: "unknown",
     },
     github: "https://github.com/VkHyperNova/vk-fasting",
-    screenshot: "test",
+    screenshot: "/screenshots/test.png",
     live: "",
   },
   {
@@ -137,7 +137,7 @@ export const projects = [
       macos: "unknown",
     },
     github: "https://github.com/VkHyperNova/vk-time",
-    screenshot: "test",
+    screenshot: "/screenshots/test.png",
     live: "",
   },
   {
@@ -154,7 +154,7 @@ export const projects = [
       macos: "unknown",
     },
     github: "https://github.com/VkHyperNova/VK-Weather",
-    screenshot: "test",
+    screenshot: "/screenshots/test.png",
     live: "",
   },
   {
@@ -171,7 +171,7 @@ export const projects = [
       macos: "unknown",
     },
     github: "https://github.com/VkHyperNova/vk-youtube-downloader",
-    screenshot: "test",
+    screenshot: "/screenshots/test.png",
     live: "",
   },
   {
@@ -188,7 +188,7 @@ export const projects = [
       macos: "unknown",
     },
     github: "https://github.com/VkHyperNova/vk-training",
-    screenshot: "test",
+    screenshot: "/screenshots/test.png",
     live: "",
   },
   {
