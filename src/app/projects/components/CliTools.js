@@ -22,14 +22,14 @@ export default function CliTools({ projects }) {
             key={project.slug}
             id={project.slug}
             onClick={() => setSelected(project)}
-            className="text-left rounded-md border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-sm hover:border-gray-300 dark:hover:border-gray-600 transition scroll-mt-24"
+            className="text-left rounded-md border border-gray-200 dark:border-gray-700 overflow-hidden cursor-pointer hover:shadow-md hover:border-gray-300 dark:hover:border-gray-600 hover:scale-[1.02] active:scale-[0.98] transition-all scroll-mt-24"
           >
             {project.screenshot && (
               // eslint-disable-next-line @next/next/no-img-element
               <img
                 src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${project.screenshot}`}
                 alt={`${project.title} screenshot`}
-                className="w-full h-28 object-cover bg-gray-100 dark:bg-gray-800"
+                className="w-full h-28 object-scale-down bg-gray-100 dark:bg-gray-800"
               />
             )}
             <div className="px-4 py-3">
@@ -55,7 +55,7 @@ export default function CliTools({ projects }) {
           onClick={() => setSelected(null)}
         >
           <div
-            className="w-full max-w-md rounded-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 overflow-hidden"
+            className="w-full max-w-lg rounded-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
             {selected.screenshot && (
@@ -63,7 +63,7 @@ export default function CliTools({ projects }) {
               <img
                 src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${selected.screenshot}`}
                 alt={`${selected.title} screenshot`}
-                className="w-full h-48 object-cover bg-gray-100 dark:bg-gray-800"
+                className="w-full h-64 object-contain bg-gray-100 dark:bg-gray-800"
               />
             )}
 
@@ -96,7 +96,7 @@ export default function CliTools({ projects }) {
 
               <div className="flex items-center justify-between">
                 {selected.github && (
-                <a
+                  <a
                     href={selected.github}
                     target="_blank"
                     rel="noreferrer"

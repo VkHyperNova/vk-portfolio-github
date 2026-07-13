@@ -11,7 +11,7 @@ export default function OlderProjects({ projects }) {
 
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {projects.map((project) => (
-                    <arctile
+                    <a
                         key={project.slug}
                         id={project.slug}
                         href={project.github}
@@ -21,7 +21,7 @@ export default function OlderProjects({ projects }) {
                     >
                         <span className="font-medium">{project.title}</span>
                         <span className="text-gray-400 text-xs">→</span>
-                    </arctile>
+                    </a>
                 ))}
             </div>
         </div>

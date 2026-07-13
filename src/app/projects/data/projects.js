@@ -35,7 +35,7 @@ export const projects = [
       macos: "unknown",
     },
     github: "https://github.com/VkHyperNova/VK-Books",
-    screenshot: "/screenshots/test.png",
+    screenshot: "/screenshots/vk-books.png",
     live: "",
   },
   {
@@ -52,7 +52,7 @@ export const projects = [
       macos: "unknown",
     },
     github: "https://github.com/VkHyperNova/VK-Quotes",
-    screenshot: "/screenshots/test.png",
+    screenshot: "/screenshots/vk-quotes.png",
     live: "",
   },
   {
@@ -69,7 +69,7 @@ export const projects = [
       macos: "unknown",
     },
     github: "https://github.com/VkHyperNova/VK-FINANCE",
-    screenshot: "/screenshots/test.png",
+    screenshot: "/screenshots/vk-finance.png",
     live: "",
   },
   {
@@ -86,7 +86,7 @@ export const projects = [
       macos: "unknown",
     },
     github: "https://github.com/VkHyperNova/vk-walking",
-    screenshot: "/screenshots/test.png",
+    screenshot: "/screenshots/vk-walking.png",
     live: "",
   },
   {
@@ -103,7 +103,7 @@ export const projects = [
       macos: "unknown",
     },
     github: "https://github.com/VkHyperNova/PWM",
-    screenshot: "/screenshots/test.png",
+    screenshot: "/screenshots/pwm.png",
     live: "",
   },
   {
@@ -120,7 +120,7 @@ export const projects = [
       macos: "unknown",
     },
     github: "https://github.com/VkHyperNova/vk-fasting",
-    screenshot: "/screenshots/test.png",
+    screenshot: "/screenshots/vk-fasting.png",
     live: "",
   },
   {
@@ -137,7 +137,7 @@ export const projects = [
       macos: "unknown",
     },
     github: "https://github.com/VkHyperNova/vk-time",
-    screenshot: "/screenshots/test.png",
+    screenshot: "/screenshots/vk-time.png",
     live: "",
   },
   {
@@ -154,7 +154,7 @@ export const projects = [
       macos: "unknown",
     },
     github: "https://github.com/VkHyperNova/VK-Weather",
-    screenshot: "/screenshots/test.png",
+    screenshot: "/screenshots/vk-weather.png",
     live: "",
   },
   {
@@ -171,7 +171,7 @@ export const projects = [
       macos: "unknown",
     },
     github: "https://github.com/VkHyperNova/vk-youtube-downloader",
-    screenshot: "/screenshots/test.png",
+    screenshot: "/screenshots/vk-youtube-downloader.png",
     live: "",
   },
   {
@@ -188,7 +188,7 @@ export const projects = [
       macos: "unknown",
     },
     github: "https://github.com/VkHyperNova/vk-training",
-    screenshot: "/screenshots/test.png",
+    screenshot: "/screenshots/vk-training.png",
     live: "",
   },
   {

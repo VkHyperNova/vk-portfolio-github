@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { projects } from "./projects";
+import { projects } from "./data/projects";
 import { getLastUpdated, formatRelativeDate } from "@/lib/github";
-import FeaturedProjects from "./FeaturedProjects";
-import CliTools from "./CliTools";
-import OlderProjects from "./OlderProjects";
+import FeaturedProjects from "./components/FeaturedProjects";
+import CliTools from "./components/CliTools";
+import OlderProjects from "./components/OlderProjects";
 
 
 export const metadata = {
