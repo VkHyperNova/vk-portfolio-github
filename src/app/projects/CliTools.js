@@ -27,7 +27,7 @@ export default function CliTools({ projects }) {
             {project.screenshot && (
               // eslint-disable-next-line @next/next/no-img-element
               <img
-                src={project.screenshot}
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${project.screenshot}`}
                 alt={`${project.title} screenshot`}
                 className="w-full h-28 object-cover bg-gray-100 dark:bg-gray-800"
               />
@@ -61,7 +61,7 @@ export default function CliTools({ projects }) {
             {selected.screenshot && (
               // eslint-disable-next-line @next/next/no-img-element
               <img
-                src={selected.screenshot}
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${selected.screenshot}`}
                 alt={`${selected.title} screenshot`}
                 className="w-full h-48 object-cover bg-gray-100 dark:bg-gray-800"
               />
@@ -96,7 +96,7 @@ export default function CliTools({ projects }) {
 
               <div className="flex items-center justify-between">
                 {selected.github && (
-                  <a
+                <a
                     href={selected.github}
                     target="_blank"
                     rel="noreferrer"

@@ -1,3 +1,4 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
   basePath: "/vk-portfolio-github",
@@ -7,3 +8,5 @@ const nextConfig = {
     NEXT_PUBLIC_BASE_PATH: "/vk-portfolio-github",
   },
 };
+
+export default nextConfig;
