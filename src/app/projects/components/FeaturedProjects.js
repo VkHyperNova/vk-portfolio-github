@@ -13,14 +13,16 @@ export default function FeaturedProjects({ projects }) {
           className="border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:shadow-md transition scroll-mt-24"
         >
           <div className="flex items-start justify-between gap-4 mb-2">
-            <h2 className="text-2xl font-semibold">{project.title}</h2>
+            <span className="text-[10px] uppercase tracking-wide font-medium text-gray-400 dark:text-gray-500">
+              {project.name}
+            </span>
             {project.lastUpdated && (
               <span className="shrink-0 text-xs px-2 py-1 rounded-full bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 whitespace-nowrap">
                 {formatRelativeDate(project.lastUpdated)}
               </span>
             )}
           </div>
-
+          <h2 className="text-2xl font-semibold">{project.title}</h2>
           <p className="text-gray-700 dark:text-gray-300 mb-4">
             {project.description}
           </p>
@@ -45,11 +47,10 @@ export default function FeaturedProjects({ projects }) {
               {Object.entries(project.os).map(([platform, status]) => (
                 <span
                   key={platform}
-                  className={`text-xs px-2 py-1 rounded ${
-                    status === "tested"
-                      ? "bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300"
-                      : "bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400"
-                  }`}
+                  className={`text-xs px-2 py-1 rounded ${status === "tested"
+                    ? "bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300"
+                    : "bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400"
+                    }`}
                 >
                   {platform.charAt(0).toUpperCase() + platform.slice(1)}: {status}
                 </span>

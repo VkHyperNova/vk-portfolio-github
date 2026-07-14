@@ -24,24 +24,19 @@ export default function CliTools({ projects }) {
             onClick={() => setSelected(project)}
             className="text-left rounded-md border border-gray-200 dark:border-gray-700 overflow-hidden cursor-pointer hover:shadow-md hover:border-gray-300 dark:hover:border-gray-600 hover:scale-[1.02] active:scale-[0.98] transition-all scroll-mt-24"
           >
-            {project.screenshot && (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${project.screenshot}`}
-                alt={`${project.title} screenshot`}
-                className="w-full h-28 object-scale-down bg-gray-100 dark:bg-gray-800"
-              />
-            )}
             <div className="px-4 py-3">
               <div className="flex items-center justify-between gap-2 mb-1">
-                <span className="text-sm font-medium">{project.title}</span>
+                <span className="text-[10px] uppercase tracking-wide font-medium text-gray-400 dark:text-gray-500">
+                  {project.name}
+                </span>
                 {project.lastUpdated && (
                   <span className="shrink-0 text-[10px] px-1.5 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 whitespace-nowrap">
                     {formatRelativeDate(project.lastUpdated)}
                   </span>
                 )}
               </div>
-              <p className="text-xs text-gray-500 dark:text-gray-400 line-clamp-1">
+              <span className="text-sm font-medium">{project.title}</span>
+              <p className="text-xs text-gray-500 dark:text-gray-400 line-clamp-2">
                 {project.description}
               </p>
             </div>
@@ -81,6 +76,22 @@ export default function CliTools({ projects }) {
                 {selected.longDescription || selected.description}
               </p>
 
+              {selected.os && (
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {Object.entries(selected.os).map(([platform, status]) => (
+                    <span
+                      key={platform}
+                      className={`text-xs px-2 py-1 rounded ${status === "tested"
+                        ? "bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300"
+                        : "bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400"
+                        }`}
+                    >
+                      {platform.charAt(0).toUpperCase() + platform.slice(1)}: {status}
+                    </span>
+                  ))}
+                </div>
+              )}
+
               {selected.tech && (
                 <div className="flex flex-wrap gap-1.5 mb-6">
                   {selected.tech.map((tech) => (
@@ -93,7 +104,6 @@ export default function CliTools({ projects }) {
                   ))}
                 </div>
               )}
-
               <div className="flex items-center justify-between">
                 {selected.github && (
                   <a
@@ -105,6 +115,7 @@ export default function CliTools({ projects }) {
                     GitHub →
                   </a>
                 )}
+
                 <button
                   onClick={() => setSelected(null)}
                   className="text-sm text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
