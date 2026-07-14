@@ -56,7 +56,7 @@ export default function CliTools({ projects }) {
             {selected.screenshot && (
               // eslint-disable-next-line @next/next/no-img-element
               <img
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${selected.screenshot}`}
+                src={selected.screenshot}
                 alt={`${selected.title} screenshot`}
                 className="w-full h-64 object-contain bg-gray-100 dark:bg-gray-800"
               />
