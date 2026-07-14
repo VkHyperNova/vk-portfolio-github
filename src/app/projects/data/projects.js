@@ -8,7 +8,7 @@ export const projects = [
     longDescription:
       "A personal portfolio site showcasing my projects, built with Next.js and styled with Tailwind CSS. Deployed on GitHub Pages.",
     tech: ["Next.js", "Tailwind CSS"],
-    github: "https://github.com/VkHyperNova/vk-portfolio-github",
+    github: "https://github.com/VkHyperNova/vkhypernova.github.io",
     live: "https://vkhypernova.github.io/vk-portfolio-github/",
   },
   {
