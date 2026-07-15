@@ -33,7 +33,7 @@ export const projects = [
       "ylkusaunake.ee was my second client website — built for a local wood-heated sauna in Ülenurme that accommodates up to 10 people. Built on WordPress with a custom theme, covering info, availability, and booking details. The site is currently offline as the owner has not renewed hosting.",
     tech: ["WordPress", "Bootstrap"],
     github: "https://github.com/VkHyperNova/ylkusaunake",
-    live: "",
+    live: "https://vk-dev.eu/ylkusaunake",
   },
   {
     slug: "vk-books",
