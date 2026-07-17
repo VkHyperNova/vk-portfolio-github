@@ -116,7 +116,11 @@ export const projects = [
     longDescription:
       "PWM is a lightweight command-line tool for securely storing and retrieving credentials, built entirely in Go. It's a personal project — built for my own use rather than public distribution.",
     tech: ["Go", "CLI", "File I/O"],
-    os: { linux: "tested" },
+    os: {
+      linux: "tested",
+      windows: "tested",
+      macos: "not tested",
+    },
     screenshot: "/screenshots/pwm.png",
   },
   {
