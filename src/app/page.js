@@ -48,12 +48,13 @@ export default function HomePage() {
           <h2 className="text-2xl font-semibold mb-6">What I work with</h2>
 
           <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-4xl">
-            {skills.map((skill) => (
+            {skills.map(({ name, icon: Icon, color }) => (
               <li
-                key={skill}
-                className="rounded-md border border-gray-200 dark:border-gray-700 px-4 py-2 text-sm text-gray-700 dark:text-gray-300"
+                key={name}
+                className="flex items-center gap-2 rounded-md border border-gray-200 dark:border-gray-700 px-4 py-2 text-sm text-gray-700 dark:text-gray-300"
               >
-                {skill}
+                <Icon size={16} style={{ color }} />
+                <span>{name}</span>
               </li>
             ))}
           </ul>
