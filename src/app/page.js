@@ -4,7 +4,7 @@ import { skills } from "./about/skills"
 export const metadata = {
   title: "Home | Developer Portfolio",
   description:
-    "Junior software developer building clean, maintainable full-stack applications using Go, JavaScript, and modern web technologies.",
+    "Junior software developer building applications using Go, JavaScript, and modern web technologies.",
 };
 
 export default function HomePage() {
@@ -21,7 +21,7 @@ export default function HomePage() {
 
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
               <b className="text-black dark:text-blue-100">
-                Programmer & Linux user
+                Programmer (I use linux btw)
               </b>
             </p>
 
