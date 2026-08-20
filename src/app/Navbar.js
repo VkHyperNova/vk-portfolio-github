@@ -1,5 +1,6 @@
 "use client"; // Required because we use state (for mobile menu or theme toggle)
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import ThemeToggle from "./ThemeToggle";
 
@@ -14,12 +15,30 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-white dark:bg-gray-900 shadow-md fixed w-full z-50">
+    <nav className="bg-gray-100 dark:bg-gray-900 shadow-md fixed w-full z-50">
       <div className="container mx-auto flex justify-between items-center px-4 py-3">
         {/* Logo / Brand */}
-        <Link href="/" className="text-2xl font-bold">
-          VK-DEV
+        <Link href="/" className="flex items-center">
+          {/* Light theme logo (black) */}
+          <Image
+            src="/logo-black.png"
+            alt="VK-DEV Logo"
+            width={100}
+            height={28}
+            className="block dark:hidden"
+            priority
+          />
+          {/* Dark theme logo (white) */}
+          <Image
+            src="/logo-white.png"
+            alt="VK-DEV Logo"
+            width={100}
+            height={28}
+            className="hidden dark:block"
+            priority
+          />
         </Link>
+
         <ThemeToggle />
 
         {/* Desktop Links */}
