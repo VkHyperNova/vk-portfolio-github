@@ -15,7 +15,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-gray-100 dark:bg-gray-900 shadow-md fixed w-full z-50">
+    <nav className="bg-zinc-100 dark:bg-zinc-900 shadow-md fixed w-full z-50">
       <div className="container mx-auto flex justify-between items-center px-4 py-3">
         {/* Logo / Brand */}
         <Link href="/" className="flex items-center">

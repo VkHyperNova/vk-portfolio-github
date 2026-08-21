@@ -5,7 +5,7 @@ import { contacts } from "./contact/contacts";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300 mt-10 py-6">
+    <footer className="bg-zinc-100 dark:bg-zinc-900 text-gray-700 dark:text-gray-300 mt-10 py-6">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         {/* Copyright / Branding */}
         <p className="text-sm">&copy; {new Date().getFullYear()} Veikko Kiis. All rights reserved.</p>

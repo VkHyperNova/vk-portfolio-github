@@ -16,26 +16,26 @@ export default function HomePage() {
           {/* LEFT: TEXT */}
           <div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              Hi, I’m <span className="text-blue-600">Veikko Kiis</span>.
+              Hi, I’m <span className="text-zinc-600">Veikko Kiis</span>.
             </h1>
 
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
               <b className="text-black dark:text-blue-100">
-                Programmer (I use linux btw)
+                Programmer 
               </b>
             </p>
 
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/projects"
-                className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
+                className="px-6 py-3 bg-zinc-600 text-white rounded-md hover:bg-zinc-700 transition"
               >
                 View Projects
               </Link>
 
               <Link
                 href="/about"
-                className="px-6 py-3 border border-blue-600 text-blue-600 rounded-md hover:bg-blue-600 hover:text-white transition"
+                className="px-6 py-3 border border-zinc-600 text-zinc-600 rounded-md hover:bg-amber-600 hover:text-white transition"
               >
                 About Me
               </Link>

@@ -12,8 +12,10 @@ export default function CliTools({ projects }) {
     <div className="mt-20">
       <h2 className="text-2xl font-semibold mb-2">Personal CLI Tools</h2>
       <p className="text-sm text-gray-600 dark:text-gray-400 mb-6 max-w-2xl">
-        Small Go command-line utilities I built to practice clean file I/O,
-        error handling, and offline-first data persistence.
+        I turn problems from my own life into software—building tools,
+        using them myself,
+        discovering what does not work,
+        and continuously improving their architecture and functionality.
       </p>
 
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

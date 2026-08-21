@@ -30,7 +30,7 @@ export default async function ProjectsPage() {
 
   return (
     <section className="container mx-auto px-4 py-20 max-w-6xl">
-      <header className="mb-16">
+      <header className="mb-16 ">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Projects</h1>
         <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl">
           A selection of projects I’ve built to learn, experiment, and improve
