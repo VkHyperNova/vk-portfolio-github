@@ -47,7 +47,7 @@ export default function Navbar() {
             <li key={link.name}>
               <Link
                 href={link.href}
-                className="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+                className="relative text-black hover:text-amber-600 dark:text-white dark:hover:text-amber-600 transition-colors duration-200 after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-[1px] after:w-0 after:bg-amber-600 hover:after:w-full after:transition-all after:duration-300"
               >
                 {link.name}
               </Link>

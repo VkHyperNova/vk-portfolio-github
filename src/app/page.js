@@ -1,5 +1,8 @@
 import Link from "next/link";
 import { skills } from "./about/skills"
+import ProjectsButton from "@/components/ProjectsButton";
+import ContactButton from "@/components/ContactButton";
+import AboutButton from "@/components/AboutButton";
 
 export const metadata = {
   title: "Home | Developer Portfolio",
@@ -16,7 +19,7 @@ export default function HomePage() {
           {/* LEFT: TEXT */}
           <div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              Hi, I’m <span className="text-zinc-600">Veikko Kiis</span>.
+              Hi, I’m <span className="text-amber-600">Veikko Kiis</span>.
             </h1>
 
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
@@ -26,19 +29,9 @@ export default function HomePage() {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <Link
-                href="/projects"
-                className="px-6 py-3 bg-zinc-600 text-white rounded-md hover:bg-zinc-700 transition"
-              >
-                View Projects
-              </Link>
+              <ProjectsButton />
 
-              <Link
-                href="/about"
-                className="px-6 py-3 border border-zinc-600 text-zinc-600 rounded-md hover:bg-amber-600 hover:text-white transition"
-              >
-                About Me
-              </Link>
+              <AboutButton />
             </div>
           </div>
         </section>
@@ -75,7 +68,7 @@ export default function HomePage() {
               </p>
               <Link
                 href="/projects#vk-youtube-downloader"
-                className="text-blue-600 hover:underline"
+                className="text-amber-600 hover:underline"
               >
                 View project →
               </Link>
@@ -93,7 +86,7 @@ export default function HomePage() {
               </p>
               <Link
                 href="/projects#vk-books"
-                className="text-blue-600 hover:underline"
+                className="text-amber-600 hover:underline"
               >
                 View project →
               </Link>
@@ -128,19 +121,9 @@ export default function HomePage() {
         {/* ================= CTA ================= */}
         <section>
           <div className="flex flex-wrap gap-4">
-            <Link
-              href="/projects"
-              className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
-            >
-              View Projects
-            </Link>
+            <ProjectsButton />
 
-            <Link
-              href="/contact"
-              className="px-6 py-3 border border-blue-600 text-blue-600 rounded-md hover:bg-blue-600 hover:text-white transition"
-            >
-              Contact Me
-            </Link>
+            <ContactButton />
           </div>
         </section>
       </div>

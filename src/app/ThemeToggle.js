@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 import { useState, useEffect } from "react";
 
 export default function ThemeToggle() {
@@ -20,7 +20,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="px-3 py-2 border rounded-md text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+      className="px-3 py-2 border border-amber-600 dark:border-amber-500 rounded-md text-sm hover:bg-amber-200 dark:hover:bg-amber-700 transition"
     >
       {theme === "light" ? "🌙 Dark" : "☀️ Light"}
     </button>
